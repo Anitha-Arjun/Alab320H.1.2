@@ -3,6 +3,8 @@ body {
   min-height: 100%;
   max-width: 1000px;
   font-family: sans-serif;
+  font-style: italic;
+  font-size: medium;
   padding: 1rem 2rem;
 }
 
@@ -11,6 +13,10 @@ footer {
   color: tomato;
 }
 
+h3 {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
 .links {
   list-style-type: none; /* Removes default bullets */
   padding: 0; /* Removes default padding */
@@ -23,9 +29,11 @@ footer {
 .links li {
   margin: 0;
   display: flex;
+  justify-content: space-between;
 }
 .links li a {
   color: lightgray;
+  padding-bottom: 60px;
 }
 
 .footer_links {
@@ -33,19 +41,24 @@ footer {
   padding: 0; /* Removes default padding */
   margin: 0; /* Removes default margin */
   display: flex; /* Aligns items in a row */
-  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
-  gap: 70px; /* Adds equal spacing between items */
+  flex-wrap: wrap; /*Allows items to wrap to the next line if needed */
+  gap: 40px; /* Adds equal spacing between items */
 }
 
 .footer_links li {
   margin: 0;
   display: flex;
-  gap: 110px; /* Removes margin from list items */
+  gap: 20px; /* Removes margin from list items */
 }
 
 .footer_links li a {
   color: tomato;
   text-decoration: none;
+  justify-content: space-between;
+}
+.line {
+  margin: 4rem 1px lightgray;
+  padding-bottom: 2rem;
 }
 
 links {
@@ -57,9 +70,30 @@ links {
   text-decoration: underline; /* Underline on hover */
 }
 
-h3,
-header.links {
+.styleColor {
   color: lightgray;
+  font-size: 30px;
+}
+
+.text a {
+  text-align: right;
+  /* justify-content: right; */
+  text-decoration: none;
+  font-style: bold;
+  color: tomato;
+  /* position: absolute; */
+  /* bottom: 0;
+  right: 0; */
+  /* width: 100px; */
+}
+
+.text {
+  text-align: right;
+}
+.text::after {
+  content: "\2026";
+  font-size: 25px;
+  color: tomato;
 }
 
 .content {
@@ -78,18 +112,4 @@ header.links {
 
 .copy_right {
   color: lightgray;
-}
-.text {
-  text-align: right;
-  font-style: bold;
-  color: tomato;
-  /* position: absolute;
-  bottom: 0;
-  right: 0; */
-  /* width: 100px; */
-}
-
-.text::after {
-  content: "\2026";
-  font-size: 25px;
 }
